@@ -1,0 +1,8 @@
+# Install the dependencies
+numpy               # for matrix operations
+matplotlib          # for plotting
+Pillow              # for image manipulation
+torch==1.8.1        # for deep learning
+torchvision==0.9.1  # for deep learning
+torchaudio===0.8.1  # for deep learning
+tqdm                # for progress bars

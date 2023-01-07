@@ -131,3 +131,4 @@ dmypy.json
 
 # User Added
 .vscode
+.env
