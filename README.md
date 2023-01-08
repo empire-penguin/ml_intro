@@ -5,8 +5,8 @@
 This repo serves as an introduction into some modern ML paradigms and the PyTorch framework. 
 
 ## Example Network Architecture
-# AlexNet
-## Image from paper 
+### AlexNet
+#### Image from paper 
 ![Example Network Architecture](network_architecture.png)
 
 [Link to paper.](
@@ -14,7 +14,7 @@ This repo serves as an introduction into some modern ML paradigms and the PyTorc
 )
 
 
-## Architecture of AlexNet. 
+#### Architecture of AlexNet. 
 The input image is 224x224x3. The output is 1000 classes.
 * **The First layer** is a Convolutional layer with 96 filters of size 11x11x3 with stride 4 and ReLU activation.
 * **The Second layer** is a Max pooling layer with size 3x3 and stride 2.
