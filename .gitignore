@@ -133,3 +133,4 @@ dmypy.json
 .vscode
 .env
 cifar-100-python
+.DS_Store
