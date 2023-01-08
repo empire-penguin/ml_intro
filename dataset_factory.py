@@ -2,7 +2,7 @@
 ## Generates a dataset object from a config file
 ##################################################
 ## Author: Gavin Roberts 
-## Date: 01-07-2023
+## Date: Jan-07-2023
 ## Contribuors:
 ## Version: 1.0.0
 ## Email: gsroberts@ucsd.edu
@@ -14,6 +14,12 @@ from torch.utils.data import DataLoader
 from example_dataset import ExampleDataset
 
 def get_datasets(config_data):
+    ''' 
+    Generates a training, validation, and test datasets from a config file
+    
+    Args:
+        config_data (dict): The config data for the dataset
+    '''
     # Get the root directories for the train, test, and val datasets
     images_root_dir = config_data['dataset']['images_root_dir']
     root_train = os.path.join(images_root_dir, 'train')
@@ -43,9 +49,11 @@ def get_dataloader(img_dir, csv_file, batch_size, shuffle, num_workers):
     dataset = ExampleDataset(img_dir, csv_file)
 
     # Create the dataloader object
-    dataloader = DataLoader(dataset=dataset,
-                            batch_size=batch_size,
-                            shuffle=shuffle,
-                            num_workers=num_workers)
+    dataloader = DataLoader(
+        dataset=dataset,
+        batch_size=batch_size,
+        shuffle=shuffle,
+        num_workers=num_workers
+    )
 
     return dataloader
