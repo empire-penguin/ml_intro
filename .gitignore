@@ -132,3 +132,4 @@ dmypy.json
 # User Added
 .vscode
 .env
+cifar-100-python

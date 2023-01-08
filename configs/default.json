@@ -1,14 +1,11 @@
 {
     "config_name": "default",
     "dataset": {
-      "training_ids_file_path": "./train_ids.csv",
-      "validation_ids_file_path": "./val_ids.csv",
-      "test_ids_file_path": "./test_ids.csv",
-      "training_annotation_file_path": "./data/annotations/captions_train2014.json",
-      "test_annotation_file_path": "./data/annotations/captions_val2014.json",
       "images_root_dir": "./data/images/",
-      "vocabulary_threshold": 2,
-      "img_size": 256,
+      "train_csv_path": "./data/train.csv",
+      "val_csv_path": "./data/val.csv",
+      "test_csv_path": "./data/test.csv",
+      "img_size": 224,
       "batch_size": 64,
       "num_workers": 1
     },
@@ -24,18 +21,12 @@
       "patience": 3
     },
     "model": {
-      "hidden_size": 512,
-      "embedding_size": 300,
-      "model_type": "Custom",
-      "keep_image": false,
+      "model_name": "alexnet",
+      "num_classes": 100,
+      "model_type": "Default",
       "dropout_rate": 0
     },
-    "generation": {
-      "max_length": 20,
-      "deterministic": false,
-      "temperature": 0.4
-    },
     "develop":{
-      "log_captions": true
+      "log": true
     }
   }

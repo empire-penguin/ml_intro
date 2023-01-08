@@ -13,20 +13,19 @@ This repo serves as an introduction into some modern ML paradigms and the PyTorc
     https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 )
 
-
 #### Architecture of AlexNet. 
 The input image is 224x224x3. The output is 1000 classes.
-* **The First layer** is a Convolutional layer with 96 filters of size 11x11x3 with stride 4 and ReLU activation.
-* **The Second layer** is a Max pooling layer with size 3x3 and stride 2.
-* **The Third layer** is a Convolutional layer with 256 filters of size 5x5x48 with stride 1 and ReLU activation.
-* **The Fourth layer** is a Max pooling layer with size 3x3 and stride 2.
-* **The Fifth layer** is a Convolutional layer with 384 filters of size 3x3x256 with stride 1 and ReLU activation.
-* **The Sixth layer** is a Convolutional layer with 384 filters of size 3x3x192 with stride 1 and ReLU activation.
-* **The Seventh layer** is a Convolutional layer with 256 filters of size 3x3x192 with stride 1 and ReLU activation.
-* **The Eighth layer** is a Max pooling layer with size 3x3 and stride 2.
-* **The Ninth layer** is a Fully connected layer with 4096 neurons and ReLU activation.
-* **The Tenth layer** is a Fully connected layer with 4096 neurons and ReLU activation.
-* **The Eleventh layer** is a Fully connected layer with 1000 neurons and Softmax activation.
+1. Convolutional layer with 96 filters of size 11x11x3 with stride 4 and ReLU activation.
+2. Max pooling layer with size 3x3 and stride 2.
+3. Convolutional layer with 256 filters of size 5x5x48 with stride 1 and ReLU activation.
+4. Max pooling layer with size 3x3 and stride 2.
+5. Convolutional layer with 384 filters of size 3x3x256 with stride 1 and ReLU activation.
+6. Convolutional layer with 384 filters of size 3x3x192 with stride 1 and ReLU activation.
+7. Convolutional layer with 256 filters of size 3x3x192 with stride 1 and ReLU activation.
+8. Max pooling layer with size 3x3 and stride 2.
+9. Fully connected layer with 4096 neurons and ReLU activation.
+10. Fully connected layer with 4096 neurons and ReLU activation.
+11. Fully connected layer with 1000 neurons and Softmax activation.
 
 
 

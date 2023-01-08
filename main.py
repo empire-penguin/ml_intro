@@ -2,6 +2,8 @@
 ## Main script for training a ML model
 ##################################################
 ## Author: Gavin Roberts
+## Date: Jan-07-2023
+## Contributors: 
 ## Version: 1.0.0
 ## Email: gsroberts@ucsd.edu
 ## Status: Development
